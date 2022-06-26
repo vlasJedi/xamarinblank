@@ -11,9 +11,9 @@ namespace xamarinblank.Repositories
         event EventHandler<TodoItem> OnItemAdded;
         event EventHandler<TodoItem> OnItemUpdated;
 
-        Task<List<TodoItem>> GetItems();
-        Task AddItem(TodoItem item);
-        Task UpdateItem(TodoItem item);
-        Task AddOrUpdate(TodoItem item);
+        List<TodoItem> GetItems();
+        void AddItem(TodoItem item);
+        void UpdateItem(TodoItem item);
+        void AddOrUpdate(TodoItem item);
     }
 }
